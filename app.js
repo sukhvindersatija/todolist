@@ -78,7 +78,7 @@ app.post("/delete",function(req,res){
     res.redirect("/");
 });
 
-mongoose.connect("mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.zbups.mongodb.net/?retryWrites=true&w=majority").then(res=>{
+mongoose.connect(`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.zbups.mongodb.net/?retryWrites=true&w=majority`).then(res=>{
   app.listen(process.env.PORT||3000).then(res=> {
     console.log("Server started on port 3000");
   }).catch(err=>{
