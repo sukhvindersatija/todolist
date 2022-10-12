@@ -20,7 +20,7 @@ const Item=mongoose.model("Item",itemSchema);
 //   name:String,
 //   item:[itemSchema]
 // };
-const List=mongoose.model("List",listSchema);
+// const List=mongoose.model("List",listSchema);
 
 const buyFood=new Item({
   name:"Buy Food"
