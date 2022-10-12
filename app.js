@@ -16,10 +16,10 @@ const itemSchema={
 };
 const Item=mongoose.model("Item",itemSchema);
 
-const listSchema={
-  name:String,
-  item:[itemSchema]
-};
+// const listSchema={
+//   name:String,
+//   item:[itemSchema]
+// };
 const List=mongoose.model("List",listSchema);
 
 const buyFood=new Item({
